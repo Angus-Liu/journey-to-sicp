@@ -4,8 +4,6 @@
     <img src="assets/sicp.jpg" alt="sicp">
 </div>
 
-
-
 ## 书籍介绍（豆瓣）
 
 - [Structure and Interpretation of Computer Programs - 2nd Edition (MIT)](https://book.douban.com/subject/1451622/)
