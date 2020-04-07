@@ -5,8 +5,10 @@
   (/ (+ x y) 2))
 
 ; 求平方
-(define (square x)
-  (* x x))
+;(define (square x)
+;  (* x x))
+
+(define square (lambda (x) (* x x)))
 
 ; 求均方
 (define (mean-square x y)
