@@ -3,12 +3,12 @@
 ; 使用牛顿法求平方根
 
 (define (sqrt-iter guess x)
-  (if (good-enough? guess x)
+  (if (good-enough? guess (improve guess x))
       guess
       (sqrt-iter (improve guess x) x)))
 
-(define (good-enough? guess x)
-  (< (abs (- (square guess) x)) 0.001))
+(define (good-enough? guess next-guess)
+  (< (/ (abs (- next-guess guess)) guess) 0.000001))
 
 (define (abs x)
   (if (< x 0)
@@ -31,7 +31,7 @@
 
 (sqrt 0.0004)
 
-(sqrt 9)
+(sqrt 0.5)
 
 (sqrt (+ (sqrt 256) (sqrt 81)))
 

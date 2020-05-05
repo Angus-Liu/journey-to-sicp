@@ -1,5 +1,6 @@
 #lang sicp
 
+; 练习1.5
 (define (p) (p))
 
 (define (test x y)

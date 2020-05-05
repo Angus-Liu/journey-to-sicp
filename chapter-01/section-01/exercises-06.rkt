@@ -1,5 +1,6 @@
 #lang sicp
 
+; 练习1.6
 ; 应用序导致无法求值
 (define (new-if predicate then-clause else-clause)
   (cond (predicate  then-clause)

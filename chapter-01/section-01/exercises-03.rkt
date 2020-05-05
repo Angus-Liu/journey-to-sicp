@@ -1,5 +1,6 @@
 #lang sicp
 
+; 练习1.3
 (define (sum-of-two-bigest-num x y z)
 (+ x y z 
   (- (cond ((and (< x y) (< x z)) x)
