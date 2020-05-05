@@ -29,8 +29,8 @@
 ## 其他
 
 - 书籍搜索网站
-  - 英文书籍：<https://b-ok.cc/>
-  - 中文书籍：<https://www.jiumodiary.com/>
+  - 英文书籍：<https://b-ok.cc>
+  - 中文书籍：<https://www.jiumodiary.com>
 
 ## 待续
 
