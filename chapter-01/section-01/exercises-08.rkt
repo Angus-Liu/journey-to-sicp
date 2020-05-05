@@ -31,3 +31,5 @@
   (cobe-root-iter 1.0 x))
 
 (cube-root 125)
+
+(cube-root 1)

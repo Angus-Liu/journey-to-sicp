@@ -1,6 +1,6 @@
 #lang sicp
 
-; 使用牛顿法求平方根
+; 练习1.7 使用牛顿法求平方根
 
 (define (sqrt-iter guess x)
   (if (good-enough? guess (improve guess x))
