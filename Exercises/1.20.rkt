@@ -8,7 +8,7 @@
       a
       (gcd b (remainder a b))))
 
-; 正则序
+; 正则序 or 应用序？
 (gcd 206 40)
 (gcd 40 (remainder 206 40))
 (gcd 40 6)
