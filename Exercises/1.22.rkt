@@ -1,5 +1,4 @@
 #lang sicp
-
 (define (square n)
   (* n n))
 
@@ -40,4 +39,4 @@
   (if (< n m)
       (search-for-primes (inc n) m)))
 
-(search-for-primes 1000 9999)
+(search-for-primes 100000 100005)
