@@ -5,6 +5,14 @@
       1
       (* (term a) (product term (next a) next b))))
 
+; 定义阶乘
+(define (factorial a)
+  (product (lambda (x) x) 1 (lambda (x) (inc x)) a))
+
+(factorial 4)
+  
+
+; 计算π的近似值
 (define (term n)
   (/ (+ 2 (- n (remainder n 2)))
      (+ 1 (+ n (remainder n 2)))))
@@ -21,4 +29,4 @@
         (iter (next a) (* (term a) result))))
   (iter a 1))
 
-(product-iter term 1 next 6)
+(* 4 (product-iter term (exact->inexact 1) next 10000000))
