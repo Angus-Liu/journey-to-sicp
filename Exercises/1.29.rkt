@@ -18,4 +18,4 @@
   (* n n n))
 
 (simpson-rule cube 0 1 100)
-
+(simpson-rule cube (exact->inexact 0) 1 100)
