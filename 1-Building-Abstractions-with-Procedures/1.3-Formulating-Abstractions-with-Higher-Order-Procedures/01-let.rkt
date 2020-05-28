@@ -16,3 +16,16 @@
        (* a b))))
 
 (f 1 2)
+
+
+(define (f2 x y)
+  (define a (+ 1 (* x y)))
+  (define b (- 1 y))
+    (+ (* x (square a))
+       (* y b)
+       (* a b)))
+
+(f2 1 2)
+
+(let ((x 3))
+  (+ x 2)
