@@ -2,12 +2,10 @@
 
 ; (make-rat <n> <d>): 返回一个有理数,其分子是<n>,分母是<d>
 (define (make-rat n d)
-  (cond ((and (negative? n) (negative? d))
-         (make-rat (- n) (- d)))
-        ((negative? d)
-         (make-rat (- n) (- d)))
-        (else (let ((g (gcd n d)))
-                 (cons (/ n g) (/ d g))))))
+  (if (negative? d)
+      (make-rat (- n) (- d))
+      (let ((g (gcd n d)))
+                 (cons (/ n g) (/ d g)))))
 
 ; (numer <x>): 返回有理数<x>的分子
 (define (numer x)
