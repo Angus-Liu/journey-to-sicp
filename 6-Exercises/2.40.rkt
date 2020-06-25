@@ -46,8 +46,4 @@
   (map make-pair-sum
        (filter prime-sum? (unique-pairs n))))
 
-(prime-sum-pairs 10)
-
-
-             
-              
+(prime-sum-pairs 10)          
